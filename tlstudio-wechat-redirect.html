@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>将要访问</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.9);
+    -webkit-font-smoothing: antialiased;
+  }
+  /* ===== weui-msg（微信消息页组件）===== */
+  .weui-msg {
+    padding-top: 48px;
+    text-align: center;
+    line-height: 1.4;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  .weui-msg__icon-area { margin-bottom: 32px; }
+  .weui-icon_msg { width: 64px; height: 64px; display: inline-block; }
+  .weui-icon-info { display: inline-block; width: 100%; height: 100%; }
+  .weui-msg__text-area {
+    margin-bottom: 32px;
+    padding: 0 32px;
+    flex: 1;
+    line-height: 1.6;
+    word-wrap: break-word;
+  }
+  .weui-msg__title { font-weight: 500; font-size: 22px; color: rgba(0, 0, 0, 0.9); }
+  .weui-msg__desc { font-size: 17px; font-weight: 400; color: rgba(0, 0, 0, 0.5); margin-top: 16px; }
+  .weui-msg__opr-area { margin-bottom: 16px; }
+  .weui-btn-area { margin: 48px 16px 8px; }
+  /* ===== weui-btn_default（浅灰按钮，深色字）===== */
+  .weui-btn {
+    position: relative;
+    display: block;
+    min-width: 184px;
+    max-width: 280px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.41176471;
+    border-radius: 8px;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .weui-btn_default {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .weui-btn_default:active { background-color: rgba(0, 0, 0, 0.1); }
+</style>
+</head>
+<body>
+  <div class="weui-msg">
+    <div class="weui-msg__icon-area">
+      <i class="weui-icon_msg">
+        <svg class="weui-icon-info" viewBox="0 0 24 24" fill="#fa5151" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-.763-15.864l.11 7.596h1.305l.11-7.596h-1.525zm.759 10.967c.512 0 .902-.383.902-.882 0-.5-.39-.882-.902-.882a.878.878 0 0 0-.896.882c0 .499.396.882.896.882z"/>
+        </svg>
+      </i>
+    </div>
+    <div class="weui-msg__text-area">
+      <h2 class="weui-msg__title">将要访问</h2>
+      <p class="weui-msg__desc">该网站未完成ICP备案，无法确认其安全性，如要继续访问，请注意保护个人信息。</p>
+    </div>
+    <div class="weui-msg__opr-area">
+      <div class="weui-btn-area">
+        <a class="weui-btn weui-btn_default" role="button" href="https://tlstudio.top/">继续访问</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
